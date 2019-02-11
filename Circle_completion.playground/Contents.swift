@@ -143,7 +143,8 @@ class CircleProgressionView : UIView {
 
         animation.fromValue = 1.0
         animation.toValue = 0.0
-
+        animation.fillMode = .forwards
+        animation.isRemovedOnCompletion = false
         animation.duration = 2
         animation.timingFunction =  CAMediaTimingFunction(name:
             CAMediaTimingFunctionName.easeInEaseOut)
